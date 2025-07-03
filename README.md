@@ -48,7 +48,7 @@ A full-stack Reddit-style social media app built with **React**, **TypeScript**,
 ---
 
 🖼️ Screenshots
-![Home Page](https://github.com/tatang111/social-media/issues/1#issue-3198323215)
+![Home Page](./public/home.png)
 
 ---
 
