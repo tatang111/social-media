@@ -52,15 +52,24 @@ A full-stack Reddit-style social media app built with **React**, **TypeScript**,
 ---
 
 social-media/
+
 ├── app/ # Next.js App Router structure
+
 ├── components/ # Reusable UI components (forms, post cards, etc.)
+
 ├── lib/ # Client helpers (auth, upload, utils)
+
 ├── public/ # Static assets
+
 ├── styles/ # Tailwind and global CSS
+
 ├── supabase-client/ # Supabase client and helpers
+
 ├── .env.local # Environment variables
 
 ## 📁 Environment variable
 
 VITE_SUPABASE_URL =https://irupgwcxlnkrmxxfstkf.supabase.co
-VITE_SUPABASE_KEY =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlydXBnd2N4bG5rcm14eGZzdGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA5Mjk0OTIsImV4cCI6MjA2NjUwNTQ5Mn0.CXnXHtqUm17sf9Md4-LWZ2KBMkhbNGPKBz1_QiZeTX4
+
+VITE_SUPABASE_KEY
+=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlydXBnd2N4bG5rcm14eGZzdGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA5Mjk0OTIsImV4cCI6MjA2NjUwNTQ5Mn0.CXnXHtqUm17sf9Md4-LWZ2KBMkhbNGPKBz1_QiZeTX4
