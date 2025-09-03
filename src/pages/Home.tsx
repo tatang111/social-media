@@ -42,9 +42,7 @@ const Home = () => {
             <Loader2 className="absolute h-8 w-8 animate-spin text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
           ) : (
             data?.map((post) => {
-              if (post.id < 57) {
                 return <CardRecentPost key={post.id} post={post} />;
-              }
             })
           )}
         </div>
