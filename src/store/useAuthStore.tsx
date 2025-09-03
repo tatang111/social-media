@@ -10,7 +10,14 @@ type AuthStore = {
 
 export const useAuthStore = create<AuthStore>()((set) => ({
   user: null,
-  signInWithGithub: () => supabase.auth.signInWithOAuth({ provider: "github" }),
+  signInWithGithub: () => supabase.auth.signInWithOAuth({ provider: "google",
+    options: {
+      redirectTo: window.location.origin,
+      queryParams: {
+        prompt: "select_account"
+      }
+    }
+   }),
   signOut: async () => {
     await supabase.auth.signOut();
     set({user: null})
