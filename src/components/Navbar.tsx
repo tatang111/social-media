@@ -125,7 +125,7 @@ const Navbar = () => {
                     className="h-8"
                     variant="default"
                   >
-                    Sign in with github
+                    Sign in with Google
                   </Button>
                 </div>
               )}

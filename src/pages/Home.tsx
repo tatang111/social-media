@@ -37,15 +37,18 @@ const Home = () => {
         Recent Post
       </h1>
       <div className="flex justify-center items-center">
-
-      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative w-full max-w-screen-xl">
-        {isLoading ? (
-          <Loader2 className="absolute h-8 w-8 animate-spin text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-        ) : (
-          data?.map((post) => <CardRecentPost key={post.id} post={post} />)
-        )}
-      </div>
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative w-full max-w-screen-xl">
+          {isLoading ? (
+            <Loader2 className="absolute h-8 w-8 animate-spin text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+          ) : (
+            data?.map((post) => {
+              if (post.id < 57) {
+                return <CardRecentPost key={post.id} post={post} />;
+              }
+            })
+          )}
         </div>
+      </div>
     </div>
   );
 };
